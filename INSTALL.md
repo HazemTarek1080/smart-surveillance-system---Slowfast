@@ -28,17 +28,13 @@
     git clone https://github.com/facebookresearch/detectron2 detectron2_repo
     pip install -e detectron2_repo
     pip install git+https://github.com/facebookresearch/detectron2.git@5aeb252b194b93dc2879b4ac34bc51a31b5aee13
+    pip install git+https://github.com/facebookresearch/fairscale
+    pip install git+https://github.com/facebookresearch/pytorchvideo.git
     
 ```
 
 
 ```
-
-## PySlowFast
-
-Clone the PySlowFast Video Understanding repository.
-```
-git clone https://github.com/facebookresearch/slowfast
 
 ### Build PySlowFast
 
@@ -49,4 +45,4 @@ cd SlowFast
 python setup.py build develop
 ```
 
-The installation is finished.
+The installation is finished, now navigate to the configuration file to run the demo.
