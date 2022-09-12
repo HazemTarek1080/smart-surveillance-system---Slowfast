@@ -31,10 +31,7 @@
     
 ```
 
-## Pytorch
-Please follow PyTorch official instructions to install from source:
-```
-git clone --recursive https://github.com/pytorch/pytorch
+
 ```
 
 ## PySlowFast
