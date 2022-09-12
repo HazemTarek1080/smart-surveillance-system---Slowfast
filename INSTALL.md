@@ -27,7 +27,8 @@
     pip install -U 'git+https://github.com/facebookresearch/fvcore.git' 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
     git clone https://github.com/facebookresearch/detectron2 detectron2_repo
     pip install -e detectron2_repo
-    # You can find more details at https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md
+    pip install git+https://github.com/facebookresearch/detectron2.git@5aeb252b194b93dc2879b4ac34bc51a31b5aee13
+    
 ```
 
 ## Pytorch
@@ -41,12 +42,6 @@ git clone --recursive https://github.com/pytorch/pytorch
 Clone the PySlowFast Video Understanding repository.
 ```
 git clone https://github.com/facebookresearch/slowfast
-```
-
-Add this repository to $PYTHONPATH.
-```
-export PYTHONPATH=/path/to/SlowFast/slowfast:$PYTHONPATH
-```
 
 ### Build PySlowFast
 
@@ -57,7 +52,4 @@ cd SlowFast
 python setup.py build develop
 ```
 
-Now the installation is finished, run the pipeline with:
-```
-python tools/run_net.py --cfg configs/Kinetics/C2D_8x8_R50.yaml NUM_GPUS 1 TRAIN.BATCH_SIZE 8 SOLVER.BASE_LR 0.0125 DATA.PATH_TO_DATA_DIR path_to_your_data_folder
-```
+The installation is finished.
